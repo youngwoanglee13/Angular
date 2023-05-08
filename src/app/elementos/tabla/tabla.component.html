@@ -1,0 +1,13 @@
+<table>
+    <thead>
+        <tr>
+            <th *ngFor="let item of datos.encabezado">{{ item }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fila of datos.cuerpo">
+            <td *ngFor="let datos of fila">{{ datos }}</td>
+        </tr>
+    </tbody>
+
+</table>
